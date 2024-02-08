@@ -53,7 +53,7 @@ const playGame =(userChoice) => {
              else if(userChoice==="paper")
               {
                 //rock,scissor
-                if(compChoice==="scissor")
+                if(compChoice==="scissors")
                 {
                   userWin=false;
                 }
@@ -61,7 +61,7 @@ const playGame =(userChoice) => {
                   userWin=true;
                 }
               }
-              else if(userChoice==="scissor")
+              else if(userChoice==="scissors")
               {
                 // rock,paper
                 if(compChoice==="rock"){
