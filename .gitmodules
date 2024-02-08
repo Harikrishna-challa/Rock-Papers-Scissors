@@ -1,0 +1,3 @@
+[submodule "Rock-Papers-Scissors"]
+    path = Rock-Papers-Scissors
+    url = https://github.com/Harikrishna-challa/Rock-Papers-Scissors.git
