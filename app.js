@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded',function(){
+gtdocument.addEventListener('DOMContentLoaded',function(){
 const choices =document.querySelectorAll(".choice");
 const msg =document.getElementById("msg");
 
@@ -39,16 +39,38 @@ const playGame =(userChoice) => {
     }
     else{
           let userWin=true;
-          if(userChoice==="rock"){
-            // scissors,paper
-            userWin=compChoice==="paper"?false:true;
-          }
-          else if(userChoice==="paper"){
-             // rock,scissors
-             userWin=compChoice=="rock"?false:true;
-          }else if (userChoice === "scissors") {
-            userWin = compChoice === "paper" ? true : false;
-          }
+          if(userChoice==="rock")
+          {
+            //scissors,papers
+              if(compChoice==="paper")
+              {
+                 userWin=false;
+              }
+              else {
+                userWin=true;
+              }
+            }
+             else if(userChoice==="paper")
+              {
+                //rock,scissor
+                if(compChoice==="scissor")
+                {
+                  userWin=false;
+                }
+                else{
+                  userWin=true;
+                }
+              }
+              else if(userChoice==="scissor")
+              {
+                // rock,paper
+                if(compChoice==="rock"){
+                  userWin=false;
+                }
+                else{
+                  userWin=true;
+                }
+              }
           showWinner(userWin,userChoice,compChoice);
     }
 };
