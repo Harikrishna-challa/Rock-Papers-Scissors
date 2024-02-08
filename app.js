@@ -1,4 +1,4 @@
-gtdocument.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded',function(){
 const choices =document.querySelectorAll(".choice");
 const msg =document.getElementById("msg");
 
