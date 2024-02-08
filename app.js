@@ -26,7 +26,7 @@ const showWinner=(userWin,userChoice,CompChoice) =>{
   else{
     compScore++;
     compScorePara.innerText=compScore;
-    msg.innerText= `You lost.${CompChoice} beats your${userChoice}`;
+    msg.innerText= `You lost.${CompChoice} beats your ${userChoice}`;
     msg.style.backgroundColor="red";
   }
 };
@@ -39,15 +39,37 @@ const playGame =(userChoice) => {
     }
     else{
           let userWin=true;
-          if(userChoice==="rock"){
-            // scissors,paper
-            userWin=compChoice==="paper"?false:true;
-          }
-          else if(userChoice==="paper"){
-             // rock,scissors
-             userWin=compChoice=="rock"?false:true;
-          }else if (userChoice === "scissors") {
-            userWin = compChoice === "paper" ? true : false;
+          if(userChoice==="rock")
+          {
+            //scissors,papers
+              if(compChoice==="paper")
+              {
+                 userWin=false;
+              }
+              else{
+                userWin=true;
+              }
+              if(userChoice==="paper")
+              {
+                //rock,scissor
+                if(compChoice==="scissor")
+                {
+                  userWin=false;
+                }
+                else{
+                  userWin=true;
+                }
+              }
+              if(userChoice==="scissor")
+              {
+                // rock,paper
+                if(compChoice==="rock"){
+                  userWin=false;
+                }
+                else{
+                  userWin=true;
+                }
+              }
           }
           showWinner(userWin,userChoice,compChoice);
     }
