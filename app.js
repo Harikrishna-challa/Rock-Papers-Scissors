@@ -39,37 +39,15 @@ const playGame =(userChoice) => {
     }
     else{
           let userWin=true;
-          if(userChoice==="rock")
-          {
-            //scissors,papers
-              if(compChoice==="paper")
-              {
-                 userWin=false;
-              }
-              else{
-                userWin=true;
-              }
-              if(userChoice==="paper")
-              {
-                //rock,scissor
-                if(compChoice==="scissor")
-                {
-                  userWin=false;
-                }
-                else{
-                  userWin=true;
-                }
-              }
-              if(userChoice==="scissor")
-              {
-                // rock,paper
-                if(compChoice==="rock"){
-                  userWin=false;
-                }
-                else{
-                  userWin=true;
-                }
-              }
+          if(userChoice==="rock"){
+            // scissors,paper
+            userWin=compChoice==="paper"?false:true;
+          }
+          else if(userChoice==="paper"){
+             // rock,scissors
+             userWin=compChoice=="rock"?false:true;
+          }else if (userChoice === "scissors") {
+            userWin = compChoice === "paper" ? true : false;
           }
           showWinner(userWin,userChoice,compChoice);
     }
