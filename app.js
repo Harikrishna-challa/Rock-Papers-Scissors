@@ -40,15 +40,21 @@ const playGame = (userChoice) => {
   } else {
       let userWin = false;
       if (userChoice === "Rock") {
-          // rock vs scissors or rock vs paper
-          userWin = compChoice === "Scissors";
+          // if user chooses rock
+          if(compChoice === "Scissors"){
+              userWin=true; // Rock beats Scissors
+          }
       } else if (userChoice === "Paper") {
-          // paper vs rock or paper vs scissors
-          userWin = compChoice === "Rock";
+          // if user chooses Paper
+          if (compChoice === "Rock"){
+          userWin=true; // Paper beats Rock
+          }
       } else if (userChoice === "Scissors") {
-          // scissors vs paper or scissors vs rock
-          userWin = compChoice === "Paper";
+          // if user chooses 
+          if(compChoice === "Paper"){
+          userWin=true; // Scissors beats Paper
       }
+    }
       showWinner(userWin, userChoice, compChoice);
   }
 };
