@@ -15,7 +15,7 @@ body{
 /* Add a media query for smaller screens (adjust the max-width as needed) */
 @media only screen and (max-width: 768px) {
     body {
-        text-align: left; /* Adjust text alignment for smaller screens if needed */
+        text-align: center; /* Adjust text alignment for smaller screens if needed */
     }
 }
 *{
