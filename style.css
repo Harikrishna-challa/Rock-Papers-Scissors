@@ -1,88 +1,100 @@
-body{
+body {
     background-image: url(./images/BGP.jpg);
-        background-size: cover; /* Ensure the background image covers the entire screen */
-        background-position: center; /* Center the background image */
-        background-repeat: no-repeat; /* Prevent the background image from repeating */
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     text-align: center;
 }
-#titile{
+
+#titile {
     background-color: #081b31;
     color: #fff;
-    height: 5rem;
-    line-height: 5rem;
+    height: 5vh;
+    line-height: 5vh;
 }
-.choice{
-    height: 165px;
+
+.choice {
+    height: 12vh;
+    width: 12vh;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.choice:hover{
+
+.choice:hover {
     cursor: pointer;
-    background-color:black;
-    opacity: 70%;
+    background-color: black;
+    opacity: 0.7;
 }
-img{
-    height: 150px;
-    width: 150px;
+
+img {
+    height: 10vh;
+    width: 10vh;
     object-fit: cover;
     border-radius: 50%;
 }
-.choices{
+
+.choices {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    margin-top: 5rem;
+    gap: 3vh;
+    margin-top: 5vh;
 }
-.score-board{
+
+.score-board {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
-    margin-top: 3rem;
-    gap: 5rem;
+    font-size: 4vh;
+    margin-top: 3vh;
+    gap: 5vh;
     font-weight: 400;
 }
-#user-score,#comp-score{
-    font-size: 4rem;
+
+#user-score,
+#comp-score {
+    font-size: 6vh;
 }
-.msg-container{
-    margin-top: 5rem;
+
+.msg-container {
+    margin-top: 5vh;
 }
-#msg{
+
+#msg {
     background-color: black;
     color: #fff;
-    font-size: 2rem;
+    font-size: 4vh;
     display: inline;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 1vh;
+    border-radius: 1vh;
 }
-p{
-    background-color:black;
-    color:#fff;
-    padding: 1rem;
-    border-radius: 1rem;
+
+p {
+    background-color: black;
+    color: #fff;
+    padding: 1vh;
+    border-radius: 1vh;
 }
-#footer{
-        color: black;
-        text-align: center;
-        padding: 20px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 10px; /* Adjust the height as needed */
-    }
-    
+
+#footer {
+    color: black;
+    text-align: center;
+    padding: 2vh;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+}
