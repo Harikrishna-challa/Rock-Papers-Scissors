@@ -10,24 +10,25 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 100vh; /* Ensure background covers entire viewport */
 }
 
 #title {
     background-color: #081b31;
     color: #fff;
-    height: 5vw; /* Adjust based on your preference */
-    line-height: 5vw; /* Adjust based on your preference */
-    font-size: 3vw; /* Adjust based on your preference */
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem; /* Increase font size for better visibility */
 }
 
 .choice {
-    height: 25vw; /* Adjust based on your preference */
-    width: 25vw; /* Adjust based on your preference */
+    height: 25vw; /* Increase the size of the choices */
+    width: 25vw;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3vw; /* Adjust based on your preference */
+    margin: 2rem; /* Adjust margin */
 }
 
 .choice:hover {
@@ -47,50 +48,50 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5vw; /* Adjust based on your preference */
-    margin-top: 10vh; /* Adjust based on your preference */
+    gap: 3rem;
+    margin-top: 5rem;
 }
 
 .score-board {
     display: flex;
     justify-content: center;
-    font-size: 3vw; /* Adjust based on your preference */
-    margin-top: 5vh; /* Adjust based on your preference */
-    gap: 5vw; /* Adjust based on your preference */
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
     font-weight: 400;
 }
 
 #user-score,
 #comp-score {
-    font-size: 5vw; /* Adjust based on your preference */
+    font-size: 4rem;
 }
 
 .msg-container {
-    margin-top: 5vh; /* Adjust based on your preference */
+    margin-top: 3rem; /* Increase margin */
 }
 
 #msg {
     background-color: black;
     color: #fff;
-    font-size: 2vw; /* Adjust based on your preference */
+    font-size: 2rem;
     display: inline;
-    padding: 2vw; /* Adjust based on your preference */
-    border-radius: 2vw; /* Adjust based on your preference */
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 p {
     background-color: black;
     color: #fff;
-    padding: 2vw; /* Adjust based on your preference */
-    border-radius: 2vw; /* Adjust based on your preference */
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 footer {
     color: black;
     text-align: center;
-    padding: 5vw; /* Adjust based on your preference */
+    padding: 1rem;
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 10vh; /* Adjust based on your preference */
+    height: 10vh;
 }
