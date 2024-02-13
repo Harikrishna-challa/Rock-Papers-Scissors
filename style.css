@@ -1,34 +1,45 @@
-body {
-    background-image: url(./images/BGP.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+body, html {
     margin: 0;
     padding: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh; /* Ensure background covers entire viewport */
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling on mobile */
 }
 
+#bg-video {
+    position: absolute; /* Fixed position to cover entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover entire viewport */
+    z-index: -1; /* Place behind other content */
+}
+
+/* Your existing CSS styles can go here */
+/* Ensure other elements are styled appropriately to display on top of the video */
+
 #title {
-    background-color: #081b31;
-    color: #fff;
-    height: 5rem;
+    background-color:whitesmoke;
+    color:black;
+    height: 7rem;
+    display: inline;
+    border-radius: 3rem;
+    text-align: center;
+    margin: auto;
     line-height: 5rem;
     font-size: 2rem; /* Increase font size for better visibility */
 }
 
 .choice {
-    height: 25vw; /* Increase the size of the choices */
-    width: 25vw;
+    height: 15vw; /* Reduce the size of the choices */
+    width: 15vw;
+    max-height: 150px; /* Set a maximum height */
+    max-width: 150px; /* Set a maximum width */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem; /* Adjust margin */
+    margin: 1rem; /* Adjust margin */
 }
 
 .choice:hover {
@@ -46,9 +57,10 @@ img {
 
 .choices {
     display: flex;
+    flex-wrap: wrap; /* Allow choices to wrap onto next line */
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem; /* Reduce the gap between choices */
     margin-top: 5rem;
 }
 
@@ -56,18 +68,20 @@ img {
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    margin-top: 3rem;
-    gap: 5rem;
-    font-weight: 400;
+    margin-top: 1rem;
+    gap: 2rem;
+    font-weight: 200;
 }
 
 #user-score,
 #comp-score {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .msg-container {
-    margin-top: 3rem; /* Increase margin */
+    margin-top: 2rem; /* Increase margin */
+    margin-left: 2rem;
+    text-align: center;
 }
 
 #msg {
@@ -87,11 +101,12 @@ p {
 }
 
 footer {
-    color: black;
+    color: rgb(246, 241, 241);
     text-align: center;
     padding: 1rem;
+    display: flex;
     position: fixed;
-    bottom: 0;
+    bottom: 0rem;
     width: 100%;
     height: 10vh;
 }
