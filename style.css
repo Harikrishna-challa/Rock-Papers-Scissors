@@ -15,18 +15,19 @@ body {
 #title {
     background-color: #081b31;
     color: #fff;
-    height: 5rem;
-    line-height: 5rem;
+    height: 5vw; /* Adjust based on your preference */
+    line-height: 5vw; /* Adjust based on your preference */
+    font-size: 3vw; /* Adjust based on your preference */
 }
 
 .choice {
-    height: 8vw; /* Adjust based on your preference */
-    width: 8vw; /* Adjust based on your preference */
+    height: 20vw; /* Adjust based on your preference */
+    width: 20vw; /* Adjust based on your preference */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
+    margin: 3vw; /* Adjust based on your preference */
 }
 
 .choice:hover {
@@ -38,7 +39,7 @@ body {
 img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 50%;
 }
 
@@ -46,50 +47,50 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    margin-top: 5rem;
+    gap: 5vw; /* Adjust based on your preference */
+    margin-top: 10vh; /* Adjust based on your preference */
 }
 
 .score-board {
     display: flex;
     justify-content: center;
-    font-size: 2rem;
-    margin-top: 3rem;
-    gap: 5rem;
+    font-size: 3vw; /* Adjust based on your preference */
+    margin-top: 5vh; /* Adjust based on your preference */
+    gap: 5vw; /* Adjust based on your preference */
     font-weight: 400;
 }
 
 #user-score,
 #comp-score {
-    font-size: 4rem;
+    font-size: 5vw; /* Adjust based on your preference */
 }
 
 .msg-container {
-    margin-top: 5rem;
+    margin-top: 5vh; /* Adjust based on your preference */
 }
 
 #msg {
     background-color: black;
     color: #fff;
-    font-size: 2rem;
+    font-size: 3vw; /* Adjust based on your preference */
     display: inline;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 2vw; /* Adjust based on your preference */
+    border-radius: 2vw; /* Adjust based on your preference */
 }
 
 p {
     background-color: black;
     color: #fff;
-    padding: 1rem;
-    border-radius: 1rem;
+    padding: 2vw; /* Adjust based on your preference */
+    border-radius: 2vw; /* Adjust based on your preference */
 }
 
 footer {
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 5vw; /* Adjust based on your preference */
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 10px; /* Adjust the height as needed */
+    height: 10vh; /* Adjust based on your preference */
 }
