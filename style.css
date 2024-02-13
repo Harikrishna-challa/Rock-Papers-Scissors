@@ -21,8 +21,8 @@ body {
 }
 
 .choice {
-    height: 30vw; /* Adjust based on your preference */
-    width: 30vw; /* Adjust based on your preference */
+    height: 25vw; /* Adjust based on your preference */
+    width: 25vw; /* Adjust based on your preference */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -72,7 +72,7 @@ img {
 #msg {
     background-color: black;
     color: #fff;
-    font-size: 1vw; /* Adjust based on your preference */
+    font-size: 2vw; /* Adjust based on your preference */
     display: inline;
     padding: 2vw; /* Adjust based on your preference */
     border-radius: 2vw; /* Adjust based on your preference */
