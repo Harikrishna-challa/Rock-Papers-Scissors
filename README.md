@@ -1,2 +1,2 @@
 # Rock-Papers-Scissors
-It's a game
+Rock Paper Scissors game project as part of my self-paced learning journey through tutorials provided by the Apna College YouTube channel. This interactive web-based game allows users to play against the computer, selecting from three options: rock, paper, or scissors. The project provided me with hands-on experience in HTML, CSS, and JavaScript, enhancing my understanding of front-end development concepts and JavaScript logic.
