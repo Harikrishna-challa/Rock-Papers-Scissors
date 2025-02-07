@@ -9,37 +9,47 @@
 <body>
     <!-- Video background -->
     <video autoplay muted loop id="bg-video">
-      <source src="./images/bg.mp4" type="video/mp4">
+      <source src="./images/bg.p4" type="video/mp4">
       Your browser does not support the video tag.
   </video>
+  <!-- Title of the game -->
     <h1 id="title">Rock Paper Scissors</h1>
+        <!-- Choices for the game -->
     <div class="choices">
     <div class="choice" id="Rock">
+                  <!-- Image for rock -->
     <img src="./images/rock_image.png" alt ="Rock"/>
     </div>
     <div class="choice" id="Paper">
+      <!-- Image for paper -->
     <img src="./images/paper.png" alt="Paper">
     </div>
     <div class="choice" id="Scissors">
+      <!-- Image for scissors -->
     <img src="./images/scissors_image.png" alt="Scissors">
      </div>
     </div>
+    <!-- Scoreboard for the game -->
      <div class="score-board">
       <div class="score">
+        <!-- User's score -->
          <p id="user-score">0</p>
          <p>You</p>
       </div>
       <div class="score">
+        <!-- Computer's score -->
        <p id="comp-score">0</p>
        <p>Comp</p>
       </div>
      </div>
+         <!-- Message container for game updates -->
      <div class ="msg-container">
         <p id="msg">Play your move</p>
      </div>
      <footer>
       <h3 id="footer">@hari games</h3>
      </footer>
+     <!-- Link to external JavaScript file -->
      <Script src="app.js"></Script>
 </body>
 </html>
