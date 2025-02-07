@@ -99,3 +99,39 @@ p {
     padding: 1rem;
     border-radius: 1rem;
 }
+#refresh-btn {
+    display: block;
+    width: 80%;            /* Makes the button take 80% of the container width */
+    max-width: 300px;      /* Limits the width on larger screens */
+    margin: 20px auto;     /* Centers the button horizontally with top-bottom spacing */
+    padding: 15px 20px;    /* Adds space inside the button */
+    font-size: 1.2rem;     /* Responsive font size */
+    background-color: #007BFF; /* Bright blue color for visibility */
+    color: white;          /* White text for contrast */
+    border: none;          /* No border for a modern look */
+    border-radius: 10px;   /* Rounded corners for a soft look */
+    cursor: pointer;       /* Pointer cursor to indicate it’s clickable */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+}
+
+/* Hover Effect */
+#refresh-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);    /* Slight zoom effect */
+}
+
+/* Active Click Effect */
+#refresh-btn:active {
+    background-color: #003f7f; /* Even darker when clicked */
+    transform: scale(0.98);    /* Slight press effect */
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 480px) {
+    #refresh-btn {
+        width: 90%;           /* Slightly larger width for small devices */
+        padding: 12px 15px;   /* Reduce padding on very small screens */
+        font-size: 1rem;      /* Slightly smaller text for smaller screens */
+    }
+}
