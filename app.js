@@ -7,6 +7,8 @@ const msg =document.getElementById("msg");
 // Selecting elements for displaying user and computer scores
 const userScorePara=document.querySelector("#user-score");
 const compScorePara=document.querySelector("#comp-score");
+// Selecting the refresh button
+const refreshBtn = document.getElementById("refreshBtn");
     // Initializing user and computer scores
  let userScore=0;
  let compScore=0;
@@ -54,9 +56,10 @@ const endGame = () => {
         msg.innerText = "😞 Game Over! The computer won the game.";
         msg.style.backgroundColor = "darkred";
     }
-};
+};   
 const playGame = (userChoice) => {
   // generate computer choice
+  if (gameOver) return;  // Prevent playing if game is over
   const compChoice = genCompChoice();
   if (userChoice === compChoice) {
       // Draw Game
@@ -93,8 +96,6 @@ choices.forEach((choice) => {
 });
     
     // Refresh button logic to reset the game
-    document.addEventListener('DOMContentLoaded', () => {
-     const refreshBtn = document.getElementById('refreshBtn');
     refreshBtn.addEventListener("click", () => {
         userScore = 0;
         compScore = 0;
@@ -106,5 +107,4 @@ choices.forEach((choice) => {
         msg.innerText = "Game reset! Start playing.";
         msg.style.backgroundColor = "#081b31";
     });
-});
 });
