@@ -10,6 +10,9 @@ const compScorePara=document.querySelector("#comp-score");
     // Initializing user and computer scores
  let userScore=0;
  let compScore=0;
+ const scoreLimit = 5;  // Set the limit to 5 points
+ let gameOver = false;  // Flag to stop the game when the limit is reached
+
  // Function to generate computer choice (Rock, Paper, or Scissors)
 const genCompChoice = ()=>
 {
@@ -36,8 +39,22 @@ const showWinner=(userWin,userChoice,CompChoice) =>{
     msg.innerText= `You lost.${CompChoice} beats your ${userChoice}`;
     msg.style.backgroundColor="red";
   }
+if (userScore === scoreLimit || compScore === scoreLimit) {
+    endGame();
+}
 };
 
+// Function to end the game when score limit is reached
+const endGame = () => {
+    gameOver = true;
+    if (userScore === scoreLimit) {
+        msg.innerText = "🎉 Congratulations! You won the game!";
+        msg.style.backgroundColor = "blue";
+    } else {
+        msg.innerText = "😞 Game Over! The computer won the game.";
+        msg.style.backgroundColor = "darkred";
+    }
+};
 const playGame = (userChoice) => {
   // generate computer choice
   const compChoice = genCompChoice();
@@ -74,4 +91,17 @@ choices.forEach((choice) => {
         playGame(userChoice);
     });
 });
+    
+    // Refresh button logic to reset the game
+    refreshBtn.addEventListener("click", () => {
+        userScore = 0;
+        compScore = 0;
+        gameOver = false;  // Reset the game over flag
+
+        // Reset UI elements
+        userScorePara.innerText = userScore;
+        compScorePara.innerText = compScore;
+        msg.innerText = "Game reset! Start playing.";
+        msg.style.backgroundColor = "#081b31";
+    });
 });
