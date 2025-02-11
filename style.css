@@ -99,7 +99,7 @@ p {
     padding: 1rem;
     border-radius: 1rem;
 }
-#refresh-btn {
+#refreshBtn {
     display: block;
     width: 80%;            /* Makes the button take 80% of the container width */
     max-width: 300px;      /* Limits the width on larger screens */
@@ -116,20 +116,20 @@ p {
 }
 
 /* Hover Effect */
-#refresh-btn:hover {
+#refreshBtn:hover {
     background-color: #0056b3; /* Darker blue on hover */
     transform: scale(1.05);    /* Slight zoom effect */
 }
 
 /* Active Click Effect */
-#refresh-btn:active {
+#refreshBtn:active {
     background-color: #003f7f; /* Even darker when clicked */
     transform: scale(0.98);    /* Slight press effect */
 }
 
 /* Media Queries for Small Screens */
 @media (max-width: 480px) {
-    #refresh-btn {
+    #refreshBtn {
         width: 90%;           /* Slightly larger width for small devices */
         padding: 12px 15px;   /* Reduce padding on very small screens */
         font-size: 1rem;      /* Slightly smaller text for smaller screens */

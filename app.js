@@ -93,6 +93,8 @@ choices.forEach((choice) => {
 });
     
     // Refresh button logic to reset the game
+    document.addEventListener('DOMContentLoaded', () => {
+     const refreshBtn = document.getElementById('refreshBtn');
     refreshBtn.addEventListener("click", () => {
         userScore = 0;
         compScore = 0;
@@ -104,4 +106,5 @@ choices.forEach((choice) => {
         msg.innerText = "Game reset! Start playing.";
         msg.style.backgroundColor = "#081b31";
     });
+});
 });
