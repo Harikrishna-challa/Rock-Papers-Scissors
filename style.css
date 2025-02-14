@@ -79,18 +79,26 @@ img {
 }
 
 .msg-container {
-    margin-top: 2rem; /* Increase margin */
-    margin-left: 2rem;
-    text-align: center;
+    margin-top: 5rem;
+    display: flex; /* Use flexbox for proper alignment */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Ensure it takes up the full width */
+    text-align: center; /* Center the text inside */
+    position: relative; /* Ensure positioning of child elements */
 }
 
 #msg {
     background-color: black;
     color: #fff;
     font-size: 2rem;
-    display: inline;
+    display: block; /* Change from inline to block for proper spacing */
     padding: 1rem;
     border-radius: 1rem;
+    margin: 1rem auto; /* Add margin to create space from other elements */
+    max-width: 90%; /* Make sure the message container is responsive */
+    word-wrap: break-word; /* Ensure the text wraps inside the container */
+    position: relative; /* Keeps the element in flow */
 }
 
 p {
@@ -98,18 +106,22 @@ p {
     color: #fff;
     padding: 1rem;
     border-radius: 1rem;
+    margin: 1rem 0; /* Add vertical margins to create space around paragraphs */
+    max-width: 90%; /* Make sure the paragraph container is responsive */
+    word-wrap: break-word; /* Ensure the text wraps inside the container */
+}
 }
 #refreshBtn {
     display: block;
     width: 80%;            /* Makes the button take 80% of the container width */
-    max-width: 300px;      /* Limits the width on larger screens */
+    max-width: 200px;      /* Limits the width on larger screens */
     margin: 20px auto;     /* Centers the button horizontally with top-bottom spacing */
-    padding: 15px 20px;    /* Adds space inside the button */
+    padding: 10px 15px;    /* Adds space inside the button */
     font-size: 1.2rem;     /* Responsive font size */
     background-color: #007BFF; /* Bright blue color for visibility */
     color: white;          /* White text for contrast */
     border: none;          /* No border for a modern look */
-    border-radius: 10px;   /* Rounded corners for a soft look */
+    border-radius: 8px;   /* Rounded corners for a soft look */
     cursor: pointer;       /* Pointer cursor to indicate it’s clickable */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
