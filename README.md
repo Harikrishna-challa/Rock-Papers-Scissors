@@ -10,3 +10,5 @@ Select your move: Rock 🪨, Paper 📄, or Scissors ✂️.
 Challenge the computer and see who wins!
 Track your score and aim for victory! 🏆
 Simple, fun, and addictive – perfect for quick gaming sessions. Are you ready to beat the computer? 😎
+
+link to play:https://harikrishna-challa.github.io/Rock-Papers-Scissors/
